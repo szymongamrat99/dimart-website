@@ -1,0 +1,123 @@
+.carousel {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  margin-left: 5px;
+  margin-right: 5px;
+
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.608);
+}
+
+.carousel img {
+  width: 100%;
+  height: 50px;
+}
+
+/* Instagram icons grid */
+
+.insta-icons {
+  display: flex;
+  width: 100%;
+  height: 20vw;
+}
+
+.insta-icons > .insta-item {
+  flex: 1;
+  margin: 3%;
+  border-radius: 50%;
+  border: 1px solid ;
+  background-color: #dfb7add0;
+}
+
+.insta-icons > .insta-item:before {
+  content: "";
+  padding-top: 100%;
+  display: inline-block;
+}
+
+/* Localization bar */
+
+.loc-bar {
+
+  text-align: center;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  margin-left: 5px;
+  margin-right: 5px;
+
+  padding: 10px;
+
+  border-top: 0.5px solid rgba(128, 128, 128, 0.608);
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.608);
+
+}
+
+.visit-us > a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Newsletter bar */
+
+.newsletter-bar {
+  display: flex;
+  flex-flow: column nowrap;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  text-align: center;
+
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #efeae9;
+}
+
+.newsletter-bar > .email-input {
+  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5px;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+
+  background-color: #e9e2dfd1;
+}
+
+input {
+  border: none;
+}
+
+.email-input > .input-field > input[type="text"] {
+  width: 80%;
+  border-bottom: 0.5px solid;
+
+  background-color: #f3efedd1;
+}
+
+.email-input > .input-field > input[type="submit"] {
+  background-color: #f3efedd1;
+}
+
+/* Services bar */
+.service {
+  height: 50px;
+  border-top: 0.5px solid rgba(128, 128, 128, 0.608);
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.608);
+  margin: 5px;
+
+  display: flex;
+
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+}
