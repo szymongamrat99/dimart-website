@@ -286,6 +286,7 @@ p {
 #footer {
   grid-column: span 6;
   background-color: #b38b81;
+  bottom: 0;
 }
 
 #footer * {
