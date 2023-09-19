@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      margin: 0;
+
+      display: grid;
+
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr;
+    }
+
+    #carousel {
+      margin: 0;
+      margin-left: 10px;
+      margin-right: 10px;
+      grid-column: span 6;
+      position: relative;
+      color: black;
+    }
+
+    .button {
+      border-radius: 15%;
+      cursor: pointer;
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+      font-size: 1.5rem;
+      width: 3rem;
+      height: 4rem;
+      
+      position: absolute;
+
+      transform: translate(0,-50%);
+      z-index: 1;
+    }
+
+    .button:hover {
+      background-color: rgba(128, 128, 128, 0.204);
+    }
+
+    .button.left {
+      top: 50%;
+      left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .button.right {
+      top: 50%;
+      right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .btn-text {
+      vertical-align: center;
+    }
+
+    #carousel img {
+      animation-name: fade;
+      animation-duration: 2s;
+
+      min-height: 20vh;
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    @keyframes fade {
+      from {opacity: 0;}
+      to {opacity: 100;}
+    }
+
+
+  </style>
+
+</head>
+<body>
+  <section id="carousel">
+    <div class="button left">
+      <div class="btn-text">❮</div>
+    </div>
+
+    <div class="slides">
+      <img src="slider-jenny-red-2500x900.jpg" />
+    </div>
+
+    <div class="slides">
+      <img src="slider-jenny-red-2500x900.jpg" />
+    </div>
+
+    <div class="slides">
+      <img src="slider-jenny-red-2500x900.jpg" />
+    </div>
+
+    <div class="button right">
+      <div class="btn-text">❯</div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="carousel-script.js">
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+#carousel {
+  margin: 0;
+  align-self: start;
+
+  margin-top: 5px;
+
+  grid-column: span 6;
+  position: relative;
+  color: black;
+}
+
+.button {
+  border-radius: 15%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3rem;
+  width: 3rem;
+  height: 4rem;
+  
+  position: absolute;
+
+  transform: translate(0,-50%);
+  z-index: 1;
+
+  font-weight: light;
+}
+
+.button:hover {
+  background-color: rgba(128, 128, 128, 0.204);
+}
+
+.button.left {
+  top: 50%;
+  left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.button.right {
+  top: 50%;
+  right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-text {
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+#carousel img {
+  animation-name: fade;
+  margin: 0;
+  animation-duration: 2s;
+  vertical-align: middle;
+  object-fit: cover;
+
+  width: 100%;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 100;}
+}
